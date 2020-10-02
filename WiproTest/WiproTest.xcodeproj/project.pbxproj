@@ -64,9 +64,6 @@
 		0B3FA6352526EB7E00A43F9B /* WepApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WepApiTest.swift; sourceTree = "<group>"; };
 		0B59A18A25270F8F0090A77D /* CheckNetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckNetworkConnection.swift; sourceTree = "<group>"; };
 		0B59A18B25270F8F0090A77D /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
-		0B59A191252711750090A77D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0B59A193252711B30090A77D /* MVVM.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MVVM.jpeg; sourceTree = "<group>"; };
-		0B59A1952527120D0090A77D /* iPhone11ProMax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone11ProMax.png; sourceTree = "<group>"; };
 		0BC329872523737F00412AA9 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0BC3298A252373B900412AA9 /* PicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicModel.swift; sourceTree = "<group>"; };
 		0BC3298E252373EE00412AA9 /* WebAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIHelper.swift; sourceTree = "<group>"; };
@@ -140,16 +137,6 @@
 			path = WiproTest/NetworkClass;
 			sourceTree = SOURCE_ROOT;
 		};
-		0B59A190252711500090A77D /* ReadMe */ = {
-			isa = PBXGroup;
-			children = (
-				0B59A193252711B30090A77D /* MVVM.jpeg */,
-				0B59A1952527120D0090A77D /* iPhone11ProMax.png */,
-				0B59A191252711750090A77D /* README.md */,
-			);
-			path = ReadMe;
-			sourceTree = "<group>";
-		};
 		0BC32983252372AE00412AA9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +177,6 @@
 			children = (
 				0BE49625252351DC005CD44A /* WiproTest */,
 				0BE4963C252351E3005CD44A /* WiproTestTests */,
-				0B59A190252711500090A77D /* ReadMe */,
 				0BE49624252351DC005CD44A /* Products */,
 				5A7FFE9B2AC0D9EB5829BBCF /* Pods */,
 				CBB0E89489692D843C53BB9C /* Frameworks */,
