@@ -23,6 +23,9 @@
 		0B59A18D25270F8F0090A77D /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B59A18B25270F8F0090A77D /* Loader.swift */; };
 		0B59A18E2527101F0090A77D /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B59A18B25270F8F0090A77D /* Loader.swift */; };
 		0B59A18F252710550090A77D /* CheckNetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B59A18A25270F8F0090A77D /* CheckNetworkConnection.swift */; };
+		0B707F44253F2E6B007970E4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B707F43253F2E6B007970E4 /* Constant.swift */; };
+		0B707F45253F36D1007970E4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B707F43253F2E6B007970E4 /* Constant.swift */; };
+		0B707F47253F66F5007970E4 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B707F46253F66F5007970E4 /* NetworkTest.swift */; };
 		0BC329882523737F00412AA9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC329872523737F00412AA9 /* ViewModel.swift */; };
 		0BC329892523737F00412AA9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC329872523737F00412AA9 /* ViewModel.swift */; };
 		0BC3298B252373B900412AA9 /* PicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC3298A252373B900412AA9 /* PicModel.swift */; };
@@ -35,9 +38,7 @@
 		0BC3299C252374BC00412AA9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC32998252374BC00412AA9 /* TableViewCell.swift */; };
 		0BE49627252351DC005CD44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE49626252351DC005CD44A /* AppDelegate.swift */; };
 		0BE4962B252351DC005CD44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4962A252351DC005CD44A /* ViewController.swift */; };
-		0BE4962E252351DC005CD44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE4962C252351DC005CD44A /* Main.storyboard */; };
 		0BE49630252351E3005CD44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE4962F252351E3005CD44A /* Assets.xcassets */; };
-		0BE49633252351E3005CD44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE49631252351E3005CD44A /* LaunchScreen.storyboard */; };
 		0BE4963E252351E3005CD44A /* WiproTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE4963D252351E3005CD44A /* WiproTestTests.swift */; };
 		16BE2E510A1A50C94014C9E9 /* Pods_WiproTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B05AAFB3FFEFA8EB75E97F /* Pods_WiproTestTests.framework */; };
 		81BED6941BE7935A69617A1D /* Pods_WiproTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942DAF3990FB1CAF3830AD06 /* Pods_WiproTest.framework */; };
@@ -64,6 +65,8 @@
 		0B3FA6352526EB7E00A43F9B /* WepApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WepApiTest.swift; sourceTree = "<group>"; };
 		0B59A18A25270F8F0090A77D /* CheckNetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckNetworkConnection.swift; sourceTree = "<group>"; };
 		0B59A18B25270F8F0090A77D /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		0B707F43253F2E6B007970E4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0B707F46253F66F5007970E4 /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
 		0BC329872523737F00412AA9 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0BC3298A252373B900412AA9 /* PicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicModel.swift; sourceTree = "<group>"; };
 		0BC3298E252373EE00412AA9 /* WebAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIHelper.swift; sourceTree = "<group>"; };
@@ -72,9 +75,7 @@
 		0BE49623252351DC005CD44A /* WiproTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiproTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE49626252351DC005CD44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BE4962A252351DC005CD44A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0BE4962D252351DC005CD44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BE4962F252351E3005CD44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0BE49632252351E3005CD44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BE49634252351E3005CD44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BE49639252351E3005CD44A /* WiproTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE4963D252351E3005CD44A /* WiproTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproTestTests.swift; sourceTree = "<group>"; };
@@ -163,15 +164,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0BC329862523730100412AA9 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				0BE4962C252351DC005CD44A /* Main.storyboard */,
-				0BE49631252351E3005CD44A /* LaunchScreen.storyboard */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		0BE4961A252351DC005CD44A = {
 			isa = PBXGroup;
 			children = (
@@ -201,9 +193,9 @@
 				0BC32983252372AE00412AA9 /* ViewModel */,
 				0B59A18925270F8F0090A77D /* NetworkClass */,
 				0B59A188252703230090A77D /* WebAPIHandler */,
-				0BC329862523730100412AA9 /* UI */,
 				0BE4962F252351E3005CD44A /* Assets.xcassets */,
 				0BE49634252351E3005CD44A /* Info.plist */,
+				0B707F43253F2E6B007970E4 /* Constant.swift */,
 			);
 			path = WiproTest;
 			sourceTree = "<group>";
@@ -216,6 +208,7 @@
 				0B3FA62D2526DCA000A43F9B /* ModelTest.swift */,
 				0B3FA6252525EB6C00A43F9B /* ViewModelTest.swift */,
 				0B3FA6352526EB7E00A43F9B /* WepApiTest.swift */,
+				0B707F46253F66F5007970E4 /* NetworkTest.swift */,
 				0BE4963F252351E3005CD44A /* Info.plist */,
 			);
 			path = WiproTestTests;
@@ -325,9 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BE49633252351E3005CD44A /* LaunchScreen.storyboard in Resources */,
 				0BE49630252351E3005CD44A /* Assets.xcassets in Resources */,
-				0BE4962E252351DC005CD44A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +410,7 @@
 				0BE49627252351DC005CD44A /* AppDelegate.swift in Sources */,
 				0B59A18C25270F8F0090A77D /* CheckNetworkConnection.swift in Sources */,
 				0B3FA61F2525D17900A43F9B /* WiproTestProtocol.swift in Sources */,
+				0B707F44253F2E6B007970E4 /* Constant.swift in Sources */,
 				0BC3299B252374BC00412AA9 /* TableViewCell.swift in Sources */,
 				0B59A18D25270F8F0090A77D /* Loader.swift in Sources */,
 				0BC32999252374BC00412AA9 /* ViewController+TableView.swift in Sources */,
@@ -430,8 +422,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC329892523737F00412AA9 /* ViewModel.swift in Sources */,
+				0B707F45253F36D1007970E4 /* Constant.swift in Sources */,
 				0B3FA6362526EB7E00A43F9B /* WepApiTest.swift in Sources */,
 				0B3FA62B2526168A00A43F9B /* ApiFetch.swift in Sources */,
+				0B707F47253F66F5007970E4 /* NetworkTest.swift in Sources */,
 				0BC3299C252374BC00412AA9 /* TableViewCell.swift in Sources */,
 				0B3FA6242525D35300A43F9B /* MockApiFetch.swift in Sources */,
 				0BC3299A252374BC00412AA9 /* ViewController+TableView.swift in Sources */,
@@ -457,25 +451,6 @@
 			targetProxy = 0BE4963A252351E3005CD44A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0BE4962C252351DC005CD44A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BE4962D252351DC005CD44A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0BE49631252351E3005CD44A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BE49632252351E3005CD44A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0BE49640252351E3005CD44A /* Debug */ = {

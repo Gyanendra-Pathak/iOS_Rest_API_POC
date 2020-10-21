@@ -23,7 +23,7 @@ enum  ApiResponse {
 class WebAPIHelper: NSObject {
     var task: URLSessionTask?
     static let sharedInstance = WebAPIHelper()
-    let apiURL = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
+    let apiURL = Constant.kServiceURL
 
     private override init() {
     }
@@ -31,23 +31,23 @@ class WebAPIHelper: NSObject {
     
      func callWebAPIGetRequest(CallBack: @escaping (_ data: Data?, _ error : ApiError?)->Void){
         if Reachability.isConnectedToNetwork(){
-            let apiURLMain:String! = apiURL.replacingOccurrences(of: " ", with: "%20")
+            let apiURLMain:String! = apiURL.replacingOccurrences(of: Constant.kSpace, with: Constant.kPercent20)
             let finalUrl:URL! = URL(string: apiURLMain)
             var urlRequest = URLRequest(url:finalUrl)
-            urlRequest.httpMethod = "GET"
-            urlRequest.timeoutInterval = TimeInterval(60)
+            urlRequest.httpMethod = Constant.kGet
+            urlRequest.timeoutInterval = TimeInterval(Constant.kTimeOut)
 
             task = URLSession.shared.dataTask(with: urlRequest) {
                 (data: Data?, response: URLResponse?, error: Error?) in
                 
                 DispatchQueue.main.async {
                     guard error == nil else {
-                        CallBack(nil,ApiError.ServerError(message: "Server is not responding."))
+                        CallBack(nil,ApiError.ServerError(message: error!.localizedDescription))
                         return
                     }
                     guard let _data = data
                         else {
-                            CallBack(nil,ApiError.ServerError(message: "Server is not responding."))
+                            CallBack(nil,ApiError.ServerError(message: Constant.kServerNotResponding))
                             return
                     }
                     CallBack(_data, nil)
@@ -57,7 +57,7 @@ class WebAPIHelper: NSObject {
         }
         else {
             DispatchQueue.main.async {
-                CallBack(nil,ApiError.NoInternet(message: "No Internet Connection."))
+                CallBack(nil,ApiError.NoInternet(message: Constant.kNoInternet))
             }
         }
     }

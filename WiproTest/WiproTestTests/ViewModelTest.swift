@@ -27,10 +27,10 @@ class ViewModelTest: XCTestCase {
 
     
     func testFecthData() {
-        mockAPI.apiData = PicModel(title: "Canada", rows: [])
+        mockAPI.apiData = PicModel(title: Constant.kCanada, rows: [])
         viewModel.callGetWebAPIToGetPicList() { (success, message, error) in
             if !success {
-                XCTAssert(true, "ViewModel should not be able to fetch without Web API")
+                XCTAssert(true, Constant.kViewModel_NoData_Without_WebAPI)
             }
             }
     }
@@ -39,7 +39,7 @@ class ViewModelTest: XCTestCase {
         mockAPI.apiData = nil
         viewModel.callGetWebAPIToGetPicList() { (success, message, error) in
         if success {
-            XCTAssert(false, "ViewModel should not be able to fetch")
+            XCTAssert(false, Constant.kViewModel_NoDataFetch)
         }
         }
     }

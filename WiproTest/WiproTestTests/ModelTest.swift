@@ -26,7 +26,7 @@ class ModelTest: XCTestCase {
         let data = Data()
         let model = try? apiFetchObj?.parseJsonData(data: data)
         if model != nil {
-            XCTAssert(false, "Expected failure when no data")
+            XCTAssert(false, Constant.kExpectedFailureWhenNoData)
         }
     }
     
@@ -34,16 +34,16 @@ class ModelTest: XCTestCase {
         let data = MockResponse().getResponseData()
         let modelResponse = try? apiFetchObj?.parseJsonData(data: data)
         if let model = modelResponse {
-            XCTAssertEqual(model.title, "About Canada", "Expected About Canada base")
+            XCTAssertEqual(model.title, Constant.kAboutCanada, Constant.kExpectedAboutCanadaBase)
             if let list = model.rows {
-                XCTAssertEqual(list.count, 14, "Expected 14 row count")
+                XCTAssertEqual(list.count, Constant.kRowCount, Constant.kExpectedRowCount)
 
             } else {
-                XCTAssert(false, "Expected valid ListModel")
+                XCTAssert(false, Constant.kExpectedValidPicModel)
             }
         }
         else{
-            XCTAssert(false, "Expected valid ResponseModel")
+            XCTAssert(false, Constant.kExpectedValidResponse)
         }
     }
     

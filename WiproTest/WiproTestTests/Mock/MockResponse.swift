@@ -12,36 +12,36 @@ import XCTest
 class MockResponse {
     let apiFetch = ApiFetch()
     func getResponseData() -> Data {
-        guard let data = self.readJson(forResource: "response") else {
-            XCTAssert(false, "Can't get data from facts.json")
+        guard let data = self.readJson(forResource: Constant.kResponse) else {
+            XCTAssert(false, Constant.kJSONIssue)
             return Data()
         }
         return data
     }
 
     func getResponse() -> PicModel {
-        guard let data = self.readJson(forResource: "response") else {
-            XCTAssert(false, "Can't get data from response.json")
-            return PicModel(title: "test Title", rows: nil)
+        guard let data = self.readJson(forResource: Constant.kResponse) else {
+            XCTAssert(false, Constant.kJSONIssue)
+            return PicModel(title: Constant.kTestTitle, rows: nil)
         }
         let responseResults = try? apiFetch.parseJsonData(data: data)
         if responseResults != nil {
-            XCTAssert(false, "Expected failure when no data")
+            XCTAssert(false, Constant.kExpectedFailureWhenNoData)
         }
         return responseResults!
     }
 
     func getPiclist() -> [PicDetail] {
         guard let list = getResponse().rows else {
-            return [PicDetail(title: "title", rowDescription: "description", imageHref: "imageHref")]
+            return [PicDetail(title: Constant.kTitle, rowDescription: Constant.kDescription, imageHref: Constant.kImageHref)]
         }
         return list
     }
     
     func readJson(forResource fileName: String) -> Data? {
         let bundle = Bundle(for: type(of: self))
-        guard let url = bundle.url(forResource: fileName, withExtension: "json") else {
-            XCTFail("Missing file: \(fileName).json")
+        guard let url = bundle.url(forResource: fileName, withExtension: Constant.kJson) else {
+            XCTFail("\(Constant.kMissingFile) \(fileName).\(Constant.kJson)")
             return nil
         }
 
@@ -49,7 +49,7 @@ class MockResponse {
             let data = try Data(contentsOf: url)
             return data
         } catch {
-            XCTFail("unable to read json")
+            XCTFail(Constant.kUnableToReadJson)
             return nil
         }
     }

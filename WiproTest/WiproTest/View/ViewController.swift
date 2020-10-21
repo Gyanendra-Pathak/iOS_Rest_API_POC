@@ -11,14 +11,13 @@ import UIKit
 @available(iOS 13.0, *)
 @available(iOS 13.0, *)
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-@IBOutlet weak var tableViewPic: UITableView!
+let tableViewPic = UITableView()
 var apiFetch = ApiFetch()
 var viewModel:ViewModel?
     
 var arrayPicPaging = Array<PicDetail>()
 var pagingEndCount = 10
 var pagingStartCount = 0
-var rowHeight:CGFloat = 210.0
 var refreshControl = UIRefreshControl()
 var refreshFlag = false
     
@@ -26,8 +25,21 @@ var refreshFlag = false
 override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
+    view.backgroundColor = .white
     viewModel = ViewModel(withService: apiFetch)
-    refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+    
+    tableViewPic.rowHeight = UITableView.automaticDimension
+    tableViewPic.register(TableViewCell.self, forCellReuseIdentifier: Constant.kTableViewCell)
+    view.addSubview(tableViewPic)
+    
+    tableViewPic.translatesAutoresizingMaskIntoConstraints = false
+            
+    tableViewPic.topAnchor.constraint(equalTo:view.safeAreaLayoutGuide.topAnchor).isActive = true
+    tableViewPic.leftAnchor.constraint(equalTo:view.safeAreaLayoutGuide.leftAnchor).isActive = true
+    tableViewPic.rightAnchor.constraint(equalTo:view.safeAreaLayoutGuide.rightAnchor).isActive = true
+    tableViewPic.bottomAnchor.constraint(equalTo:view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+            
+    refreshControl.attributedTitle = NSAttributedString(string: Constant.kPullToRefresh)
     refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
     tableViewPic.addSubview(refreshControl)
     self.callGetWebAPIToGetPicList()
@@ -39,21 +51,10 @@ override func viewDidLoad() {
     viewModel!.picArray.removeAll()
     self.callGetWebAPIToGetPicList()
 }
-    
-override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-    super.viewWillTransition(to: size, with: coordinator)
-    if UIDevice.current.orientation.isLandscape == true {
-        print("Landscape")
-       rowHeight = 393.0
-    } else {
-        print("Portrait")
-       rowHeight = 210.0
-    }
-}
 
 // MARK: - WebAPI to get response of pic list
 func callGetWebAPIToGetPicList() {
-    Loader.showLoader(controller: self, loaderText: "Please Wait...", withIndicator: true)
+    Loader.showLoader(controller: self, loaderText: Constant.kPleaseWait, withIndicator: true)
     viewModel!.callGetWebAPIToGetPicList() { [unowned self] (success, message, error) in
         Loader.hideLoader(controller: self)
         if success {
@@ -86,11 +87,15 @@ func callGetWebAPIToGetPicList() {
                 self.refreshFlag = false
                 self.pagingEndCount = 10
                 self.pagingStartCount = 0
+                self.arrayPicPaging.removeAll()
+                self.viewModel?.picArray.removeAll()
+                self.tableViewPic.dataSource = self
+                self.tableViewPic.delegate = self
+                self.tableViewPic.reloadData()
             }
             if message != nil {
-                self.showAlertPopUpWithSingleButton(title: self.title!, message: message!, buttonTitle: "Ok") { (status) in
+                self.showAlertPopUpWithSingleButton(title: self.title!, message: message!, buttonTitle: Constant.kOk) { (status) in
                     if status{
-                        print("Clicked Ok")
                     }
                 }
             }

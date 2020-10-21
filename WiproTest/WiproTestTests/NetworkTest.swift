@@ -1,31 +1,30 @@
 //
-//  WepApiTest.swift
+//  NetworkTest.swift
 //  WiproTestTests
 //
-//  Created by Gyanendra Pathak on 02/10/20.
+//  Created by Gyanendra Pathak on 21/10/20.
 //  Copyright © 2020 Gyanendra Pathak. All rights reserved.
 //
 
 import XCTest
 
-class WepApiTest: XCTestCase {
+class NetworkTest: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
+    func testForNoInternetConnection(){
+        let status = Reachability.isConnectedToNetwork()
+        if !status{
+            XCTAssert(true, Constant.kInternetUnavailable)
+        }
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testCancelRequest() {
-        let webApi = WebAPIHelper.sharedInstance
-        webApi.callWebAPIGetRequest() { _,_  in
-            }
-            webApi.cancelFetchResponse()
-        XCTAssertNil(webApi.task, Constant.kExpectedTaskNil)
-    }
-    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

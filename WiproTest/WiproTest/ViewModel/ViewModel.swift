@@ -26,10 +26,10 @@ func callGetWebAPIToGetPicList(getCallBack: @escaping (_ success: Bool,_ message
                 self.titleResponse = model?.title
                 self.picArray = (model?.rows!)!
                 if (self.picArray.count > 0) {
-                    getCallBack(true, "Data fetched successfully!", error)//Message can be put in localized string files
+                    getCallBack(true, Constant.kFetchedDataSuccessfully, error)
                 }
                 else {
-                    getCallBack(false, "There is some issue on server side.", error)
+                    getCallBack(false, Constant.kServerIssue, error)
                 }
         }
             else{

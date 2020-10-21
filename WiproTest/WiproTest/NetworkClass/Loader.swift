@@ -25,14 +25,14 @@ public class Loader
     
     let mainContainer: UIView = UIView(frame: viewContainer.frame)
     mainContainer.center = viewContainer.center
-    mainContainer.backgroundColor = UIColor(hex: "FFFFFF")
+    mainContainer.backgroundColor = UIColor(hex: Constant.kFFFFFF)
     mainContainer.alpha = 0.5
     mainContainer.tag = 789456123
     mainContainer.isUserInteractionEnabled = false
     
     let viewBackgroundLoading: UIView = UIView(frame: CGRect(x:0,y: 0,width: 80,height: 80))
     viewBackgroundLoading.center = viewContainer.center
-    viewBackgroundLoading.backgroundColor = UIColor(hex: "444444")
+    viewBackgroundLoading.backgroundColor = UIColor(hex: Constant.k444444)
     viewBackgroundLoading.alpha = 0.5
     viewBackgroundLoading.clipsToBounds = true
     viewBackgroundLoading.layer.cornerRadius = 15
