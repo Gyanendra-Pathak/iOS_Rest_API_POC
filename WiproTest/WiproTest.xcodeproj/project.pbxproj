@@ -26,6 +26,8 @@
 		0B707F44253F2E6B007970E4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B707F43253F2E6B007970E4 /* Constant.swift */; };
 		0B707F45253F36D1007970E4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B707F43253F2E6B007970E4 /* Constant.swift */; };
 		0B707F47253F66F5007970E4 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B707F46253F66F5007970E4 /* NetworkTest.swift */; };
+		0BB57A6F2541730C00DB3618 /* WiproTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB57A6E2541730C00DB3618 /* WiproTestUITests.swift */; };
+		0BB57A76254174D200DB3618 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B707F43253F2E6B007970E4 /* Constant.swift */; };
 		0BC329882523737F00412AA9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC329872523737F00412AA9 /* ViewModel.swift */; };
 		0BC329892523737F00412AA9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC329872523737F00412AA9 /* ViewModel.swift */; };
 		0BC3298B252373B900412AA9 /* PicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC3298A252373B900412AA9 /* PicModel.swift */; };
@@ -45,6 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0BB57A712541730C00DB3618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BE4961B252351DC005CD44A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BE49622252351DC005CD44A;
+			remoteInfo = WiproTest;
+		};
 		0BE4963A252351E3005CD44A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0BE4961B252351DC005CD44A /* Project object */;
@@ -67,6 +76,9 @@
 		0B59A18B25270F8F0090A77D /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		0B707F43253F2E6B007970E4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0B707F46253F66F5007970E4 /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
+		0BB57A6C2541730B00DB3618 /* WiproTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB57A6E2541730C00DB3618 /* WiproTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproTestUITests.swift; sourceTree = "<group>"; };
+		0BB57A702541730C00DB3618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BC329872523737F00412AA9 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0BC3298A252373B900412AA9 /* PicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicModel.swift; sourceTree = "<group>"; };
 		0BC3298E252373EE00412AA9 /* WebAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIHelper.swift; sourceTree = "<group>"; };
@@ -89,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0BB57A692541730B00DB3618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BE49620252351DC005CD44A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +157,15 @@
 			path = WiproTest/NetworkClass;
 			sourceTree = SOURCE_ROOT;
 		};
+		0BB57A6D2541730C00DB3618 /* WiproTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0BB57A6E2541730C00DB3618 /* WiproTestUITests.swift */,
+				0BB57A702541730C00DB3618 /* Info.plist */,
+			);
+			path = WiproTestUITests;
+			sourceTree = "<group>";
+		};
 		0BC32983252372AE00412AA9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +197,7 @@
 			children = (
 				0BE49625252351DC005CD44A /* WiproTest */,
 				0BE4963C252351E3005CD44A /* WiproTestTests */,
+				0BB57A6D2541730C00DB3618 /* WiproTestUITests */,
 				0BE49624252351DC005CD44A /* Products */,
 				5A7FFE9B2AC0D9EB5829BBCF /* Pods */,
 				CBB0E89489692D843C53BB9C /* Frameworks */,
@@ -180,6 +209,7 @@
 			children = (
 				0BE49623252351DC005CD44A /* WiproTest.app */,
 				0BE49639252351E3005CD44A /* WiproTestTests.xctest */,
+				0BB57A6C2541730B00DB3618 /* WiproTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,6 +267,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0BB57A6B2541730B00DB3618 /* WiproTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB57A752541730C00DB3618 /* Build configuration list for PBXNativeTarget "WiproTestUITests" */;
+			buildPhases = (
+				0BB57A682541730B00DB3618 /* Sources */,
+				0BB57A692541730B00DB3618 /* Frameworks */,
+				0BB57A6A2541730B00DB3618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB57A722541730C00DB3618 /* PBXTargetDependency */,
+			);
+			name = WiproTestUITests;
+			productName = WiproTestUITests;
+			productReference = 0BB57A6C2541730B00DB3618 /* WiproTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		0BE49622252351DC005CD44A /* WiproTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BE49642252351E3005CD44A /* Build configuration list for PBXNativeTarget "WiproTest" */;
@@ -285,6 +333,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Gyanendra Pathak";
 				TargetAttributes = {
+					0BB57A6B2541730B00DB3618 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 0BE49622252351DC005CD44A;
+					};
 					0BE49622252351DC005CD44A = {
 						CreatedOnToolsVersion = 11.2;
 					};
@@ -309,11 +361,19 @@
 			targets = (
 				0BE49622252351DC005CD44A /* WiproTest */,
 				0BE49638252351E3005CD44A /* WiproTestTests */,
+				0BB57A6B2541730B00DB3618 /* WiproTestUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0BB57A6A2541730B00DB3618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BE49621252351DC005CD44A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +457,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0BB57A682541730B00DB3618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB57A6F2541730C00DB3618 /* WiproTestUITests.swift in Sources */,
+				0BB57A76254174D200DB3618 /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BE4961F252351DC005CD44A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +514,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0BB57A722541730C00DB3618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BE49622252351DC005CD44A /* WiproTest */;
+			targetProxy = 0BB57A712541730C00DB3618 /* PBXContainerItemProxy */;
+		};
 		0BE4963B252351E3005CD44A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0BE49622252351DC005CD44A /* WiproTest */;
@@ -453,6 +527,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0BB57A732541730C00DB3618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J6FMVCRZU2;
+				INFOPLIST_FILE = WiproTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WiproTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiproTest;
+			};
+			name = Debug;
+		};
+		0BB57A742541730C00DB3618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J6FMVCRZU2;
+				INFOPLIST_FILE = WiproTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WiproTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiproTest;
+			};
+			name = Release;
+		};
 		0BE49640252351E3005CD44A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -656,6 +768,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0BB57A752541730C00DB3618 /* Build configuration list for PBXNativeTarget "WiproTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB57A732541730C00DB3618 /* Debug */,
+				0BB57A742541730C00DB3618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0BE4961E252351DC005CD44A /* Build configuration list for PBXProject "WiproTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -28,6 +28,7 @@ override func viewDidLoad() {
     view.backgroundColor = .white
     viewModel = ViewModel(withService: apiFetch)
     
+    tableViewPic.accessibilityIdentifier = Constant.kTableViewAccessId
     tableViewPic.rowHeight = UITableView.automaticDimension
     tableViewPic.register(TableViewCell.self, forCellReuseIdentifier: Constant.kTableViewCell)
     view.addSubview(tableViewPic)

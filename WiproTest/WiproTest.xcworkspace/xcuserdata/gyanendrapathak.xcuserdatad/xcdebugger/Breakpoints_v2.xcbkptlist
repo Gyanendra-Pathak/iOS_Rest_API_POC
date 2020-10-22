@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B596A83D-C753-49DF-A877-20B6DC63F99D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WiproTest/WebAPIHandler/WebAPIHelper.swift"
@@ -34,13 +34,45 @@
             endingLineNumber = "45"
             landmarkName = "callWebAPIGetRequest(CallBack:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B596A83D-C753-49DF-A877-20B6DC63F99D - 3d7902113f1290af"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WiproTest.WebAPIHelper.callWebAPIGetRequest(CallBack: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;WiproTest.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WiproTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Pathak/Pathak/InterviewTest/iOS_Rest_API_POC/WiproTest/WiproTest/WebAPIHandler/WebAPIHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "659">
+               </Location>
+               <Location
+                  uuid = "B596A83D-C753-49DF-A877-20B6DC63F99D - 988847259717819e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WiproTestTests.WebAPIHelper.callWebAPIGetRequest(CallBack: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;WiproTestTests.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WiproTestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Pathak/Pathak/InterviewTest/iOS_Rest_API_POC/WiproTest/WiproTest/WebAPIHandler/WebAPIHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "659">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "12D3771B-3726-485B-8E6C-9B9478799656"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WiproTest/WebAPIHandler/WebAPIHelper.swift"
@@ -50,6 +82,38 @@
             endingLineNumber = "50"
             landmarkName = "callWebAPIGetRequest(CallBack:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "12D3771B-3726-485B-8E6C-9B9478799656 - 3d7902113f1290af"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WiproTest.WebAPIHelper.callWebAPIGetRequest(CallBack: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;WiproTest.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WiproTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Pathak/Pathak/InterviewTest/iOS_Rest_API_POC/WiproTest/WiproTest/WebAPIHandler/WebAPIHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "12D3771B-3726-485B-8E6C-9B9478799656 - 988847259717819e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WiproTestTests.WebAPIHelper.callWebAPIGetRequest(CallBack: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;WiproTestTests.ApiError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WiproTestTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Pathak/Pathak/InterviewTest/iOS_Rest_API_POC/WiproTest/WiproTest/WebAPIHandler/WebAPIHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "356">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -81,6 +145,118 @@
             startingLineNumber = "18"
             endingLineNumber = "18"
             landmarkName = "testForNoInternetConnection()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96A4E5D2-408B-430C-AAEF-9788FB2DB5A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproTestUITests/WiproTestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "testTableViewAndCell()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37544D72-7D87-48A3-A106-D006B8FC12F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproTestUITests/WiproTestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "testTableViewAndCell()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D800C5D-2AB9-4B45-9182-48827A8F6658"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproTestUITests/WiproTestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "testTableViewAndCell()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3118DB42-2D9E-4485-A5FF-9F985AD24343"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproTestUITests/WiproTestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "testTableViewAndCell()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D225DBE-2B1C-4DED-9427-4E541F4C0145"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproTestUITests/WiproTestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testTableViewAndCell()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F7E8FEA-1371-4E15-A1C8-C743E8BB9FCC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproTestUITests/WiproTestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "testTableViewAndCell()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D5A3BB8-E428-4745-A2C3-2FC99700D7E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproTestUITests/WiproTestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "testTableViewAndCell()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

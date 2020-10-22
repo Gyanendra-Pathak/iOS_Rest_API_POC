@@ -30,6 +30,7 @@ struct Constant{
     static let kNoTitle = "Title: NA"
     static let kNoDescription = "Description: NA"
     static let kTableViewCell = "TableViewCell"
+    static let kTableViewAccessId = "TableViewPic"
     //Loader
     static let kFFFFFF = "FFFFFF"
     static let k444444 = "444444"
@@ -67,5 +68,11 @@ struct Constant{
     static let kFixPadding = 10.0
     static let kImageEqualHW = 128.0
     static let kLabelTitleHeight = 24.0
+    //UITest
+    static let kTableViewExist = "The picture detail tableview exists"
+    static let kWaitForCell = "Wait for table cells"
+    static let kFinishedValidatingCell = "Finished validating the table cells"
+    static let kUnableToFindCell = "Was not able to find any table cells"
+    static let kCellPositionOnTable = "cell is in place on the table"
 
 }
